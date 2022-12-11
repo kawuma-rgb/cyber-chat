@@ -1,0 +1,509 @@
+*,
+html,
+body,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* root */
+:root {
+  --light_green: rgb(112, 111, 111);
+  --border:grey;
+---ligt:green;
+}
+
+/* body */
+body {
+  overflow-x:hidden ;
+
+  font-family: "Varela Round", sans-serif;
+}
+
+/* navigation */
+
+.container nav {
+  margin: 0 10px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 42, 43, 0);
+
+  padding: 10px;
+  color: #ffff;
+}
+/* h4 */
+.container nav h4 {
+  font-size: 25px;
+}
+/* when scrolled to be fixed */
+.container nav {
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* main img */
+#top_img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.3);
+  height: 73vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* input_group */
+.input_group {
+  border: 2px solid var(--light_green);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* input_group a  */
+
+.input_group a {
+padding: 20px;
+}
+.input_group input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+}
+/* input send button */
+.input_group a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--light_green);
+  padding: 20px 10px;
+}
+
+/* ugandas first */
+#uganda-f {
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 25vh;
+}
+/* high end */
+.high_end {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: large;
+  font-weight: 200;
+}
+
+/* lets talk */
+#talk {
+  width: 70px;
+  padding: 5px 0px;
+  border: 2px solid var(--light_green);
+  background: transparent;
+  color: #ffff;
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin: 40px 50%;
+}
+#talk:hover {
+  background-color: var(--light_green);
+  color: #fff;
+}
+/* menu model  */
+.menu{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: #ffffff;
+width: 370px;
+box-shadow: 0 0 10px rgba(0, 0,0, 0.9);
+border-radius: 20px;
+overflow: hidden;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+aspect-ratio: 1;
+position: relative;
+display: none;
+transition: all 0s ease-in-out;
+}
+.menu h1{
+  text-transform: uppercase;
+  font-size: 26px;
+
+  margin:20px auto ;
+}
+.menu form div{
+margin: 20px auto;
+border:2px solid var(--border);
+position:relative;
+height:35px;
+border-radius:6px;
+outline:none;
+
+}
+.menu form div input{
+  width: 100%;
+  border: none;
+  background:transparent;
+outline:none;
+padding:10px 10px;
+}
+.menu form div label{
+  pointer-events:none;
+  position:absolute;
+  top:50%;
+  transform:translatey(-50%);
+left:20px;
+color:grey;
+}
+.menu form div input:focus~ label,
+.menu form div input:not(:placeholder-shown) ~ label{
+top:0;
+background:#fff;
+padding:0 10px;
+z-index:3;
+color:green;
+}
+
+
+
+.about_cont{
+  margin-top: 100px;
+}
+
+.menu form div input:focus
+{
+border-color:green;
+outline:none;
+}
+
+/* model */
+#close{
+  width: 10px;
+  position: absolute;
+  top: 23px;
+  right: 30px;
+
+
+}
+
+/* charge now */
+#charge_now {
+  color: #fff;
+  font-weight: 200;
+  text-transform: capitalize;
+  background: rgb(43, 42, 42);
+  width: 110px;
+  margin: 0;
+  padding: 7px 5px;
+  border-radius: 2px;
+  border: none;
+  border-radius: 6px;
+}
+#charge_now a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* contact form */
+#contact_us {
+  padding: 30px;
+  display: grid;
+  place-content: center;
+}
+#contact_us  h4{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 50px 0;
+  
+}
+
+.contact_form{
+  box-shadow: 0 0 20px rgba(0, 0,0, 0.3);
+  border: 2px solid var(--border);
+width: 800px;
+border-radius: 10px;overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+}
+.img{
+  overflow: hidden;
+}
+.contact_form .img img{
+  width: 100%;
+}
+.contact_form .img img{
+  object-fit:cover ;
+  width: 100%;
+  height: 100%;
+pointer-events: none;
+transform: scale(1.1);
+
+}
+.input_form{
+  margin-top: 30px;
+ 
+}
+/* contact input */
+#contact_us .contact_form   .inputs div:not(#txt){
+
+  position: relative;
+  width: 70%;
+  margin: 30px auto;
+  border: none;
+  border-bottom: 2px solid var(--border);
+  border-radius: none;
+  
+}
+#contact_us .input_form input{
+height: 50px;
+padding:-10px 20px;
+padding-top: 14px;
+width: 100%;
+border: none;
+}
+/* contact label */
+#contact_us .contact_form label{
+position: absolute;
+top: 30%;
+left: 0%;
+pointer-events: none;
+color: var(--border);
+}
+
+.form-input input{
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+
+textarea ,input:focus{
+outline: none;
+border: none;
+}
+::placeholder{
+  color: transparent;
+}
+
+input:focus ~ label{
+  color: var(--light_green);
+  transform: translatey(-23px);
+  background: #fff;
+  padding:0 0px;
+  color: rgb(211, 8, 8);
+  z-index: 3;
+  color: green;
+}
+input:not(:placeholder-shown) ~ label{
+  color: green;
+  transform: translatey(-23px);
+  background: rgb(255, 255, 255);
+  border: 2px var(--light_green);
+}
+
+
+
+textarea{
+  width: 100%;
+  height: 100%;
+  padding:  30px 40px;  
+color: grey;z-index: 3;
+background: transparent;
+
+}
+textarea::placeholder {
+  color: grey;
+}
+textarea::not(placeholder--shown) ~ label{
+display: none;
+}
+#txt{
+  width: 70%;
+  height: 200px;
+  margin: 10px auto;
+  background: transparent;
+  color: gray;
+overflow: hidden;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+/* submit */
+#contact_us .contact_form input[type="submit"]{
+border: 2px solid var(--border);
+color: rgb(56, 55, 55);
+text-transform: capitalize;
+width: 80px; 
+font-weight: 700;
+padding: 3px 20px;
+border-radius: 5px;
+padding: 10px;
+margin-left: 40%;
+margin-bottom: 5%;
+
+/* margin: 0 auto; */
+}
+ input[type="submit"]:hover{
+background: var(--light_green);
+border: 2px solid var(--light_green);
+padding: 10px;
+color: #fff;
+}
+
+/* footer */
+footer {
+  padding: 40px;
+  color: grey;
+}
+
+
+input:focus,input:focus-within{
+  background: white;
+}
+
+
+/* about page */
+.about_cont{
+  margin:20px auto ;
+  margin-top: 80px;
+border-radius: 20px;
+  font-size: 17px;
+  padding: 1% 5%;
+  padding-bottom:10px;
+  width: 80%;
+  cursor: default;
+  
+  border-bottom:2px solid var(--border) ;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.about_cont:hover{
+  background: rgba(1, 161, 54, 0.1);
+}
+
+.about_cont h4{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top:50px;
+
+}
+
+.about_cont p{
+  line-height: 25px;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size:px ;
+}
+
+
+
+
+
+/* footer */
+footer{
+text-align: center;
+font-size: 19px;
+background: rgba(152, 155, 147, 0.253);
+color: rgb(16, 17, 17);
+}
+
+
+/* media screens */
+@media only screen and (max-width:825px){
+  .contact_form input div{
+    margin-top: 12px;
+  }
+  textarea{
+    height: 100px;
+  }
+  .contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+margin: 0 auto;
+  }
+  .contact_form .img{
+height: 330px;
+width: 400px;
+object-fit: cover;
+pointer-events: none;
+
+  }
+  #txt{
+    width: 70%;
+    margin: 10px auto;
+    background: transparent;
+    color: gray;
+  overflow: hidden;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+height: 120px;
+  }
+
+  .contact_form .inputs
+{
+width: 100%;
+height: 500px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .about_cont{
+    margin:70px auto ;
+    margin-bottom: -60px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5%;
+  }
+  #top_img {
+    height: 82vh;
+  }
+  nav {
+    margin-top: -20px;
+  }
+  #uganda-f {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+
+
+  .high_end {
+    text-align: left;
+    padding: 0 30px;
+    line-height: 22px;
+    text-transform: capitalize;
+  }
+  #talk {
+    margin: 30px 40%;
+  }
+  #charge_now{
+    margin: 10px 48px ;
+  }
+}
